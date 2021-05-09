@@ -1,0 +1,114 @@
+/* Declaração de variaveis */
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+/* Resete das configurações padrão */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Não deixa os elementos expandir a caixa */
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+   
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre a tag pai do outro elemento do container */
+    
+}
+
+header .logo{
+    margin: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 40px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+
+}
+
+/* Filme Principal -----------------------------*/
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(../img/capa3.jpg);
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex; /* Elementos alinhados em linha dentro do container */
+    flex-direction: column; /* Elementos alinhados em colunas */
+    align-items: flex-start;
+    
+}
+
+.filme-principal .descricao{    
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.filme-principal .titulo{  
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+    
+
+    cursor: pointer; /* muda o ponteiro do mouse ao passar sobre o botão */
+    transition: .3s ease all; /* Adiciona uma animação no botão ao passar o mouse sobre */
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 30px;
+  
+   
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 50%;
+    width: 50%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
